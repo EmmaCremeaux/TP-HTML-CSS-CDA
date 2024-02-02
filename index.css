@@ -1,0 +1,380 @@
+/* -------------------------------------------------- Global / Répétitions -------------------------------------------------- */
+body {
+    margin: 0;
+    width: auto;
+}
+
+.titre-vert {
+    font-size: 50px;
+    margin-block: 15px;
+    color: rgb(4, 185, 4);
+    font-family: "Pacifico", cursive;
+}
+
+.titre-blanc {
+    font-size: 50px;
+    margin-block: 15px;
+    color: white;
+    font-family: "Pacifico", cursive;
+}
+
+/* -------------------------------------------------- Header -------------------------------------------------- */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(128, 4, 4);
+    align-items: center;
+    padding-inline: 50px;
+    border: 2px solid black;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+}
+
+a:hover {
+    transform: scale(2);
+    color: rgb(4, 185, 4);
+  }
+
+.nav-menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+
+/* -------------------------------------------------- accueil -------------------------------------------------- */
+
+#accueil {
+    background-image: url(./images/pizza-2810589_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+}
+
+.nom {
+    color: white;
+    font-size: 80px;
+    margin: 0 auto;
+    font-family: "Pacifico", cursive;
+}
+
+.btn {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(128, 4, 4);
+    color: white;
+    font-size: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    color:rgb(128, 4, 4) ;
+    background-color: white;
+    border: 2px solid rgb(128, 4, 4);
+}
+
+/* -------------------------------------------------- Carte -------------------------------------------------- */
+
+#carte {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    border: 2px solid black;
+    padding-top: 30px;
+}
+
+.carte-liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img-carte {
+    width: 100%;
+}
+
+.liste {
+    width: 100%;
+    list-style-type: none;
+    font-size: 20px;
+    padding-inline: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: 30%;
+}
+
+li {
+    margin-block: 10px;
+    text-align: justify;
+}
+
+/* -------------------------------------------------- Service -------------------------------------------------- */
+
+#service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 120vh;
+    border: 2px solid black;
+    background-color: rgb(160, 4, 4);
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(200px, 400px) minmax(200px, 400px);
+    grid-gap: 30px;
+    height: 80%;
+    width: 80%;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background-color: rgb(83, 3, 3) ;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(83, 3, 3) ;
+}
+
+.four {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.five {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgb(83, 3, 3) ;
+}
+
+
+.img-grid {
+    width: 100%;
+}
+
+.phrase-grid {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+/* -------------------------------------------------- Contact -------------------------------------------------- */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    border: 2px solid black;
+    align-items: center;
+    padding-inline: 50px;
+}
+
+.contact-map {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(4, 185, 4);
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    width: 80px;
+    margin-inline: 50px;
+}
+
+.map {
+    width: 50%;
+}
+
+/* -------------------------------------------------- Footer -------------------------------------------------- */
+
+footer {
+    background-color: rgb(160, 4, 4);
+    text-align: center;
+    padding-inline: 50px;
+    border: 2px solid black;
+}
+
+
+
+/* -------------------------------------------------- Media Queries -------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .nav-menu {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    #carte {
+        height: 100%;
+    }
+
+    .carte-liste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    .liste {
+        font-size: 30px;
+    }
+
+    #service {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one, .two, .three, .four, .five, .six, .img-grid, .phrase-grid {
+        height: 500px;
+        font-size: 50px;
+    }
+
+    #contact {
+        height: 100%;
+    }
+
+    .contact-map {
+        display: flex;
+        flex-direction: column;
+        margin-block: 50px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .info {
+        margin: 0 auto;
+    }
+    .map {
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nom {
+        font-size: 50px;
+    }
+
+    .liste {
+        font-size: 20px;
+    }
+
+    .one, .two, .three, .four, .five, .six, .img-grid, .phrase-grid {
+        height: 300px;
+        font-size: 30px;
+    }
+
+    #contact {
+        width: 100vw;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+
+    .icon {
+        height: 70px;
+    }
+}
